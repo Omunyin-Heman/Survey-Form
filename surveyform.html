@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Fill out this form to help us improve our services&#8226;</p>
+        
+        <form id="survey-form">
+            <label id="name-label" for="name">
+                Name: 
+                <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            
+            <label id="email-label" for="email">
+                Email:
+                <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            
+            <label id="number-label" for="number">
+                Age:
+                <input id="number" type="number" min="16" max="60" placeholder="Enter your age">
+            </label>
+                   
+            <label for="dropdown">Select your department:</label>
+            <select id="dropdown">
+                <option value="student">Student</option>
+                <option value="Executive stuff">Executive staff</option>
+                <option value="staff">staff</option>
+                <option value="support stuff">support stuff</option>
+            </select>
+            
+            <fieldset>
+                <legend>How would you recomend us?</legend>
+                <input type="radio" name="recommend" value="Good"> Good
+                <input type="radio" name="recommend" value="very good"> very good
+                <input type="radio" name="recommend" value="Excellent"> Excellent
+            </fieldset>
+            
+            <fieldset>
+                <legend>what is your preferences &#63 select one:</legend>
+                <input type="checkbox" name="preferences" value="option1"> Option 1
+                <input type="checkbox" name="preferences" value="option2"> Option 2
+                <input type="checkbox" name="preferences" value="option3"> Option 3
+
+            </fieldset>
+            
+            <label for="additional comments">Additional Comments:</label>
+            <textarea id="additional comments" placeholder="Enter your comments here"></textarea>
+            <button id="submit" type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
